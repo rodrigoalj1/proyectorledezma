@@ -22,5 +22,5 @@ while True:
         print ("Kilometros:" + str (" {:.2f}" .format ((json_data ["route"] ["distance"]) *1.61)))
         print("=================================================")
     for each in json_data["route"] ["legs"] [0] ["maneuvers"]:
-        print((each["narrative"]) +"("+ str("{f:.2f}".format((each["distance"])*1.61) + " km)"))
+        print((each["narrative"]) +"("+ str("{:.2f}".format((each["distance"])*1.61) + " km)"))
         print("=======================\n")

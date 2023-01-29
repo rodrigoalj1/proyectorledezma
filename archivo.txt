@@ -1,0 +1,8 @@
+echo
+"FROM python"
+echo "RUN pip install flask" echo "cOPY
+•/static /home/myapp/static/"
+echo
+./templates /home/myapp/templates/"
+echo "coPy sample_ app.py /home/myapp/" echo "EXPOSE 8080"
+echo "CMD python3 / home/myapp/sample_app.py"

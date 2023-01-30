@@ -6,3 +6,39 @@ echo
 ./templates /home/myapp/templates/"
 echo "coPy sample_ app.py /home/myapp/" echo "EXPOSE 8080"
 echo "CMD python3 / home/myapp/sample_app.py"
+
+
+
+[
+    fromnetmikoimportConnectHandler
+router = {​​
+"device_type":"cisco_ios",
+"host":"172.16.1.102",
+"username":"cisco",
+"password":"cisco123!",
+}​​
+ssh = ConnectHandler(**router)
+show_run = "show run"
+show_interface = " show ip int br"
+show_version =" show version "
+op = True
+whileop :
+print (""""
+1. do show run 
+2. do show ip int br
+3. do show version
+otra : salir
+""")
+opcion = int(input("ingrese opcion :"))
+ifopcion == 1:
+request = ssh.send_command(show_run)
+print (request)
+elifopcion == 2:
+request=ssh.send_command(show_interface)
+print (request)
+elifopcion == 3:
+request = ssh.send_command(show_version)
+print (request)
+else:
+print("Opcion incorrectasaliendo")
+op = False
